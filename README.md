@@ -1,9 +1,9 @@
-# DayPlanner 
+# DayPlanner
 A simple day planner. This implementation focuses on the core concept of organizing activities for a single day with both manual and AI-assisted scheduling.
 
 ## Concept: DayPlanner
 
-**Purpose**: Help you organize activities for a single day  
+**Purpose**: Help you organize activities for a single day
 **Principle**: You can add activities one at a time, assign them to times, and then observe the completed schedule
 
 ### Core State
@@ -180,3 +180,5 @@ Try extending the DayPlanner:
 
 - [Google Generative AI Documentation](https://ai.google.dev/docs)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+
+hello
