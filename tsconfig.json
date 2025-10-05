@@ -20,9 +20,10 @@
     "*.ts"
   ],
   "files": [
-    "dayplanner.ts",
     "gemini-llm.ts",
-    "dayplanner-tests.ts"
+    "personalqa.ts",
+    "personalqa-tests.ts"
+
   ],
   "exclude": [
     "node_modules",

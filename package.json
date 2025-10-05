@@ -2,15 +2,14 @@
   "name": "gemini-schedule-demo",
   "version": "1.0.0",
   "description": "A demo application showing how to use Google's Gemini API to create student schedules",
-  "main": "dist/dayplanner-tests.js",
+  "main": "dist/personalqa-tests.js",
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node dist/dayplanner-tests.js",
-    "dev": "ts-node --transpile-only dayplanner-tests.ts",
-    "test": "npm run build && node dist/dayplanner-tests.js",
-    "manual": "npm run build && node -e \"require('./dist/dayplanner-tests.js').testManualScheduling()\"",
-    "llm": "npm run build && node -e \"require('./dist/dayplanner-tests.js').testLLMScheduling()\"",
-    "mixed": "npm run build && node -e \"require('./dist/dayplanner-tests.js').testMixedScheduling()\""
+    "start": "npm run build && node dist/personalqa-tests.js",
+    "dev": "ts-node --transpile-only personalqa-tests.ts",
+    "test": "npm run build && node dist/personalqa-tests.js",
+    "personalqa": "npm run build && node dist/personalqa-tests.js",
+    "personalqa:dev": "ts-node --transpile-only personalqa-tests.ts"
   },
   "keywords": ["gemini", "ai", "schedule", "student", "demo", "typescript"],
   "author": "Student Demo",

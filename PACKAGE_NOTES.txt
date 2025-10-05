@@ -1,0 +1,10 @@
+Add to package.json scripts:
+  "qa": "npm run build && node -e \"require('./dist/personalqa-tests.js').runAll()\"",
+  "qa:a": "npm run build && node -e \"require('./dist/personalqa-tests.js').runA()\"",
+  "qa:b": "npm run build && node -e \"require('./dist/personalqa-tests.js').runB()\"",
+  "qa:c": "npm run build && node -e \"require('./dist/personalqa-tests.js').runC()\""
+
+Also add to tsconfig.json 'files' array:
+  "personalqa.ts",
+  "qa-llm.ts",
+  "personalqa-tests.ts"
