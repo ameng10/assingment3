@@ -63,6 +63,39 @@ Maya opens PersonalQA and lands on the **Ask Screen**, where she enters “Do la
 
 ---
 
+## Quick Setup & Implementation Steps
+
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd intro-gemini-schedule
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Configure your Gemini API key:**
+   - Copy the template and add your API key:
+     ```bash
+     cp config.json.template config.json
+     # Edit config.json and paste your Gemini API key
+     ```
+4. **Run the backend:**
+   ```bash
+   npm start
+   ```
+5. **Run tests (optional):**
+   ```bash
+   npm test
+   ```
+6. **Review output:**
+   - Answers, confidence, and citations will print to the console.
+   - See the `personalqa-tests.ts` file for scenario examples.
+
+*Node.js 18+ recommended. No front-end required; all logic is backend TypeScript.*
+
+---
+
 ## 4. Test Scenarios: Full Sequences and Prompt Experiments
 
 ### Scenario 1: Clear Pattern
@@ -240,3 +273,20 @@ Citations: (none)
 Web search conclusion (Wikipedia • Seed oil): <one-paragraph summary...>
 Source: https://en.wikipedia.org/wiki/Seed_oil
 ```
+
+---
+
+## Troubleshooting
+
+**"Could not load config.json"**
+- Ensure `config.json` exists with your API key
+- Check JSON format is correct
+
+**"Error calling Gemini API"**
+- Verify API key is correct
+- Check internet connection
+- Ensure API access is enabled in Google AI Studio
+
+**Build Issues**
+- Use `npm run build` to compile TypeScript
+- Check that all dependencies are installed with `npm install`
