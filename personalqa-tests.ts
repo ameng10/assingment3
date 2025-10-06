@@ -30,20 +30,6 @@ async function scenarioB() {
   });
 }
 
-async function scenarioB_edgecase() {
-  await runScenario({
-    tag: "Scenario B (edge case) — unrelated facts",
-    facts: [
-      { at: "2025-10-13T08:00Z", content: "Breakfast: avocado toast", source: "meal" },
-      { at: "2025-10-13T12:00Z", content: "Lunch: salad with chicken", source: "meal" },
-      { at: "2025-10-13T18:00Z", content: "Dinner: pasta with tomato sauce", source: "meal" },
-      { at: "2025-10-14T09:00Z", content: "Morning energy: 7/10", source: "check_in" },
-      { at: "2025-10-14T21:00Z", content: "Snack: yogurt with berries", source: "meal" },
-    ],
-    question: "Does watching the NBA affect my energy levels?"
-  });
-}
-
 async function scenarioC() {
   await runScenario({
     tag: "Scenario C — out-of-scope",
@@ -153,14 +139,12 @@ async function maybeDoWebSupport(question: string, qa: { answer: string; confide
 export async function runAll() {
   await scenarioA();
   await scenarioB();
-  await scenarioB_edgecase();
   await scenarioC();
 }
 
 // For convenience
 export async function runA() { await scenarioA(); }
 export async function runB() { await scenarioB(); }
-export async function runB_edgecase() { await scenarioB_edgecase(); }
 export async function runC() { await scenarioC(); }
 
 if (require.main === module) {
